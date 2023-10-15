@@ -18,21 +18,9 @@
       max-width: 100%;
     }
   </style>
-  <!-- <script type="module">
-          document.addEventListener("click", (e) => {
-            if (e.target.matches("button")) {
-              const article = e.target.closest("article");
-              const id = article.dataset.id;
 
-              fetch(`http://localhost:1234/movies/${id}`, {
-                method: "DELETE",
-              }).then((res) => {
-                if (res.ok) {
-                  article.remove();
-       
-    </script> -->
   <script type="module">
-    fetch('http://localhost:3000/movies')
+    fetch('https://hobart-taipan-fskb.2.us-1.fl0.io/movies')
       .then(res => res.json())
       .then(movies => {
         const html = movies.map(movie => {
@@ -53,7 +41,7 @@
             const article = e.target.closest('article');
             const id = article.dataset.id;
 
-            fetch(`http://localhost:3000/movies/${id}`, {
+            fetch(`https://hobart-taipan-fskb.2.us-1.fl0.io/movies/${id}`, {
               method: "DELETE",
             }).then((res) => {
               if (res.ok) {
