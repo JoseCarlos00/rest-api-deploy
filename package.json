@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "4.18.2",
+    "zod": "3.22.2"
+  },
+  "license": "MIT",
+  "main": "app.js",
+  "name": "rest-api",
+  "scripts": {
+    "start": "yarn ./app.js",
+    "dev": "node --watch ./app.js"
+  },
+  "version": "1.0.0"
+}
