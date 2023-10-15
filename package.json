@@ -7,7 +7,7 @@
   "main": "app.js",
   "name": "rest-api",
   "scripts": {
-    "start": "yarn ./app.js",
+    "start": "node ./app.js",
     "dev": "node --watch ./app.js"
   },
   "version": "1.0.0"
